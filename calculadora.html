@@ -1,0 +1,86 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+   <title>
+   Calculadora
+     </title>
+
+<script type="text/javascript" src="calc.js"></script>
+
+   </head>
+<body>
+<div role="main">
+ <h1>
+Oi, eu sou uma calculadora! :)
+</h1>
+<p>
+To meia desageitada, quando nasci, minha dona estava aprendendo a codar...
+Aí depois que ela aprendeu, e começou a fazer outras coisas, fiquei meia esquecida, mas, sempre muito bem guardada!
+</p>
+<p>
+Lembro também, que fui muito bem utilizada por ela na faculdade :) os meus ajustes ia acontecendo conforme ela precisava na facul.
+e conforme alguns desafios passados por uma colega de trabalho dela.
+</p>
+<p>
+Eu ainda preciso de muitos ajustes, correções, modificações, mas, eu funciono!
+Claro que se alguém quiser fazer ajustes, fique a vontade :) eu e minha dona adoraremos, e ficaremos muito orgulhosas, porque terá alguém aprendendo, igual minha dona começou!
+</p>
+<p>
+Vamos lá para minha funcionalidade?
+</p>
+</div>
+<div role="form">
+<form name="formcalc" method="post" action="">
+<label for="valor1">Digite o valor 1</label>
+	  <input type="number" name="valor1" id="valor1" aria-required="true"/>
+<div id="texto" role="alert">
+</div>
+        
+<label for="valor2">Digite o valor 2</label>
+<input type="number" name="valor2" id="valor2" aria-required="true"/>
+
+<div id="texto2" role="alert">
+</div>
+
+<label id="oper">Selecione a operação:</label>
+<select id="combo" name="oper" aria-labelledby="oper">
+         <option value="0">Somar</option>
+         <option value="1">Subtrair</option>
+         <option value="2">Multiplicar</option>
+         <option value="3">Dividir</option>
+<option value="4">Potenciação</option>
+<option value="5">Porcentagem</option>
+		 <option value="6">Cálculo de resto de divisão</option>
+</select>
+</div>
+</main>
+
+<div tabindex="0" id="res" title="resultado" role="complementary" aria-live="assertive"/>
+<fieldset id="resultado">
+<legend>=</legend>
+<output name="resultado" id="res" id="result"></output>
+</div>
+<div role="complementary">
+<table>
+<td>
+<input type="button" value="Calcular" class="botao" onClick="calcular(document.formcalc.oper.value)"/>
+</td>
+<td>
+<input type="button" name="limpar" class="num" value="Limpar tudo" onclick="calcLimpar()">
+</td>
+<td>
+<input type="button" name="limpar" class="num" value="Limpar resultado" onclick="calcLimparResultado()">
+</td>
+</table>
+</div>
+</form>
+<div role="contentinfo">
+Minha dona é a Mi, se precisar de algo:
+<a href="https://twitter.com/mi_frasson">Ela está no twitter</a>
+<a href="mailto:michelle.j.frasson@gmail.com">Aqui tem o e-mail dela também!</a>
+
+:)
+</div>
+
+</body>
+</html>
